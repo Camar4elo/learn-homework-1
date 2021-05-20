@@ -29,8 +29,6 @@ if __name__ == "__main__":
     count = 0
     while count <= 5 :
         string_1 = input('Введите строку 1: ')
-        print(type(string_1))
         string_2 = input('Введите строку 2: ')
-        print(type(string_2))
         print(main(string_1, string_2))
         count += 1
