@@ -1,4 +1,4 @@
-my_string = str(input('Введите строку: '))
+my_string = input('Введите строку: ')
 
-for word in my_string:
-    print(word.upper())
+for char in my_string:
+    print(char.upper())
