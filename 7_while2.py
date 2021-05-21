@@ -17,7 +17,7 @@
 
 def ask_user(questions_and_answers):
     user_question = input('Введи вопрос: ')
-    return questions_and_answers.get(f'{user_question}')
+    return questions_and_answers.get(user_question)
     
 if __name__ == "__main__":
     questions_and_answers = {'Как дела?': 'Хорошо', 'Что делаешь?': 'Программирую', 'Что делаешь вечером?': 'Иду в кино',
