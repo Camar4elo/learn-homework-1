@@ -18,17 +18,17 @@ def discounted(price, discount, max_discount=20):
         price = abs(float(price))
         discount = abs(float(discount))
         max_discount = abs(int(max_discount))
-    except ValueError:
-        print('Ошибка значения!')
-    try:
-        if max_discount > 99:
-            raise ValueError('Слишком большая максимальная скидка')
-        if discount >= max_discount:
-            return price
-        else:
-            return price - (price * discount / 100)
     except TypeError:
-        return 'Ошибка типа данных!'
+        return ('Ошибка в типе данных!')
+    except ValueError:
+        return ('Ошибка Значения!')
+    if max_discount > 99:
+        raise ValueError('Слишком большая максимальная скидка')
+    if discount >= max_discount:
+        return price
+    else:
+        return price - (price * discount / 100)
+ 
     
     
 if __name__ == "__main__":
